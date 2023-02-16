@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>calculadora</title>
+        <script type="text/javascript">
+            function somar(){
+                var n1=document.getElementById("txtN1").value;
+                var n2=document.getElementById("txtN2").value;
+                var resultado=parseFloat(n1) + parseFloat(n2);
+
+                document.getElementById("txtResultado").value=resultado;
+                document.getElementById("resultado").innerHTML="resultado: "+resultado;
+            }
+
+            function subtrair(){
+                var n1=document.getElementById("txtN1").value;
+                var n2=document.getElementById("txtN2").value;
+                var resultado=parseFloat(n1) - parseFloat(n2);
+
+                document.getElementById("txtResultado").value=resultado;
+                document.getElementById("resultado").innerHTML="resultado: "+resultado;
+            }
+
+            function multiplicar(){
+                var n1=document.getElementById("txtN1").value;
+                var n2=document.getElementById("txtN2").value;
+                var resultado=parseFloat(n1) * parseFloat(n2);
+
+                document.getElementById("txtResultado").value=resultado;
+                document.getElementById("resultado").innerHTML="resultado: "+resultado;
+            }
+
+            function dividir(){
+                var n1=document.getElementById("txtN1").value;
+                var n2=document.getElementById("txtN2").value;
+                var resultado=parseFloat(n1) / parseFloat(n2);
+
+                document.getElementById("txtResultado").value=resultado;
+                document.getElementById("resultado").innerHTML="resultado: "+resultado;
+            }
+        </script>
+    </head>
+    <body style="font-size: 22pt;">
+        <h1>calculadora</h1>
+        numero 1: <input type="text" id="txtN1"><br>
+        numero 2: <input type="text" id="txtN2"><br>
+        resultado: <input type="text" id="txtResultado"><br>
+
+        <h3 id="resultado">resultado: </h3>
+
+        <input type="button" value="+" onclick="somar()">
+        <input type="button" value="-" onclick="subtrair()">
+        <input type="button" value="*" onclick="multiplicar()">
+        <input type="button" value="/" onclick="dividir()">
+    </body>
+</html>

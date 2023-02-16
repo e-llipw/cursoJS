@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>for</title>
+        <script type="text/javascript" src="increment.js"></script>
+        <script type="text/javascript">
+            for (let i = 1; i < 5; i++){
+                alert(i);
+                document.write(i);
+            }
+            function sim(){
+                document.write("<h1>sim</h1>");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>cadastro</h1>
+        nome: <input type="text"><br>
+        data de nascimento: <input type="text" id="txtData" maxlength="10" onkeypress="maskdate();"><br>
+        cep: <input type="text" id="txtCep" maxlength="9" onkeypress="maskCep();"><br>
+        telefone: <input type="text" id="txtCel" maxlength="14" onkeypress="maskCel();"><br>
+        <input type="button" value="cadastrar">
+        <button onclick="sim()">sera?</button>
+    </body>
+</html>
